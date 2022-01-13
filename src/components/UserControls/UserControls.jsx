@@ -10,7 +10,7 @@ export default function UserControls({feedback, dateInput, setDateInput, undo, r
             </div>
             <form>
                 <label htmlFor="date">Date</label>
-                <input type="date" id='date' value={dateInput} onChange={(e) => setDateInput(e.target.value)} />
+                <input type="date" id='date' name='date' value={dateInput} onChange={(e) => setDateInput(e.target.value)} />
             </form>
         </section>
     )
