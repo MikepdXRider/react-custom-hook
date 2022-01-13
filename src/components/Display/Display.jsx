@@ -1,9 +1,10 @@
 import React from 'react'
+import dateFormatter from '../../utils/dateFormatter.js'
 
 export default function Display({content}) {
     return (
         <section>
-            <p>{content ? content.toLocaleString('en-US') : 'Pick a date'}</p>
+            <p>{content ? dateFormatter(content) : 'Pick a date'}</p>
         </section>
     )
 }
